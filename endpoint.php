@@ -28,9 +28,6 @@
  *    but is now required in all cases if you are making use of this PHP example.
  */
 
-// Include the upload handler class
-require_once "uploader.php";
-
 $uploader = new \FineUploader\Uploader();
 
 // Specify the list of valid extensions, ex. array("jpeg", "xml", "bmp")
