@@ -29,9 +29,9 @@
  */
 
 // Include the upload handler class
-require_once "handler.php";
+require_once "uploader.php";
 
-$uploader = new UploadHandler();
+$uploader = new \FineUploader\Uploader();
 
 // Specify the list of valid extensions, ex. array("jpeg", "xml", "bmp")
 $uploader->allowedExtensions = array(); // all files types allowed by default

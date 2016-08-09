@@ -1,4 +1,5 @@
 <?php
+namespace FineUploader;
 
 /**
  * Do not use or reference this directly from your client-side code.
@@ -6,7 +7,7 @@
  * file(s).
  */
 
-class UploadHandler {
+class Uploader {
 
     public $allowedExtensions = array();
     public $sizeLimit = null;
@@ -180,7 +181,7 @@ class UploadHandler {
             $target = $targetFolder.'/'.$partIndex;
             $success = move_uploaded_file($_FILES[$this->inputName]['tmp_name'], $target);
 
-            return array("success" => true, "uuid" => $uuid);
+            return array("success" => $success, "uuid" => $uuid);
 
         }
         else {
